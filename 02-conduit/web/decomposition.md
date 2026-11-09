@@ -1,0 +1,105 @@
+# Decomposição do Conduit
+
+Decomposição funcional do site [Conduit](https://conduit.mate.academy/) (aplicação de estudo baseada no RealWorld), usada como estrutura das seções de casos de teste no TestRail. Conteúdo original em inglês.
+
+## Parte 1 — usuário deslogado
+
+- **1** Home page
+  - **1.1** Feed global
+    - **1.1.1** Article Preview
+      - **1.1.1.1** "User Profile” Link
+      - **1.1.1.2** [Like] Button
+      - **1.1.1.3** Article Information (Title and Description)
+      - **1.1.1.4** Tags
+  - **1.2** Popular Tags
+    - **1.2.1** Tag
+- **2** Sign In page
+  - **2.1** "Sign In" Form
+    - **2.1.1** "Email" Field
+    - **2.1.2** "Password" Field
+    - **2.1.3** [Sign In] Button
+  - **2.2** "Need an Account? Link"
+- **3** Sign Up page
+  - **3.1** "Sign Up" Form
+    - **3.1.1** "Username" Field
+    - **3.1.2** "Email" Field
+    - **3.1.3** "Password" Field
+    - **3.1.4** [Sign Up] Button
+  - **3.2** "Have an Account? Link"
+- **4** Article page
+  - **4.1** Article header
+    - **4.1.1** Article title
+    - **4.1.2** "User profile" link
+    - **4.1.3** Post data
+    - **4.1.4** [Follow: username] button
+    - **4.1.5** [Favorite article] button (Favorite article)
+  - **4.2** Article text
+  - **4.3** Tags
+  - **4.4** Comments
+    - **4.4.1** Comment text
+    - **4.4.2** User profile link
+    - **4.4.3** Post data
+- **5** User page
+  - **5.1** User Banner
+    - **5.1.1** User Icon
+    - **5.1.2** User Name
+    - **5.1.3** [Follow: username:]
+  - **5.2** My publications
+    - **5.2.1** Article view
+  - **5.3** Favorite publications
+    - **5.3.1** Article view
+
+## Parte 2 — usuário logado
+
+- **1** Home page
+  - **1.1** Feed Navigation
+    - **1.1.1** “Your Feed” Tab
+        - **1.1.1.1.2** Article Preview
+        - **1.1.1.1.3** “User Profile” Link
+        - **1.1.1.1.4** [Like] Button
+        - **1.1.1.1.5** Article Information (Title and Description)
+        - **1.1.1.1.6** Tags
+    - **1.1.2** “Global Feed” Tab
+      - **1.1.2.1** Article Preview
+      - **1.1.2.2** "User Profile” Link
+      - **1.1.2.3** [Like] Button
+      - **1.1.2.4** Article Information (Title and Description)
+      - **1.1.2.5** Tags
+  - **1.2** Popular Tags
+    - **1.3.1** Tag List
+- **2** New Article page
+  - **2.1** “Article Title” Field
+  - **2.2** "What’s this article about?” Field
+  - **2.3** “Write your article (in markdown)” Field
+  - **2.4** “Enter Tags” Field
+  - **2.5** [Publish Article] Button
+- **3** Settings…
+  - **3.1** "Your Settings" Form
+    - **3.1.1** “URL of profile picture” Field
+    - **3.1.2** "Username” Field
+    - **3.1.3** “Short bio about you” Field
+    - **3.1.4** “Email” Field
+    - **3.1.5** “New Password” Field
+    - **3.1.6** [Update Settings] Button (green)
+  - **3.2** [Or click here to logout] Button (red)
+- **4** User page
+  - **4.1** User Banner
+    - **4.1.1** User Icon
+    - **4.1.2** User Name
+    - **4.1.3** [Edit Profile Settings]
+  - **4.2** My posts
+    - **4.2.1** Empty State Message (Text: “No articles are here… yet.”)
+  - **4.3** Favorited Posts
+    - **4.3.1** Empty State Message (Text: “No articles are here… yet.”)
+- **5** Article page
+  - **5.1** Article header
+    - **5.1.1** Article title
+    - **5.1.2** "User profile" link
+    - **5.1.3** Post data
+    - **5.1.4** [Edit Article] button
+    - **5.1.5** [Delete Article] button
+  - **5.2** Article text
+  - **5.3** Tags
+  - **5.4** Comments
+    - **5.4.1** "Write a comment…” Field
+    - **5.4.2** [Post Comment] button
